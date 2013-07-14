@@ -27,7 +27,8 @@ swig.init({
 	allowErrors: false,
 	autoescape: true,
 	cache: true,
-	encoding: 'utf8'
+	encoding: 'utf8',
+	root: __dirname + '/views'
 });
 
 // development only

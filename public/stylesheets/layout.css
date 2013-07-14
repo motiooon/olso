@@ -1,0 +1,12 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.navigation_right{
+    float: right;
+}
+
+.navbar-inverse .navbar-inner{
+    background-color: #3c3c3c;
+}
