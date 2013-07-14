@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Olso{% endblock %}</title>
+    <link rel="stylesheet" href="/javascripts/vendor/bootstrap/css/bootstrap.min.css">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+{% block content %}{% endblock %}
+
+<script src="/javascripts/vendor/bootstrap/js/bootstrap.min.js"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
