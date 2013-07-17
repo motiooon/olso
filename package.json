@@ -9,6 +9,7 @@
     "express": "3.3.4",
     "jade": "*",
     "swig": "~0.14.0",
-    "consolidate": "~0.9.1"
+    "consolidate": "~0.9.1",
+    "log4js": "~0.6.6"
   }
 }

@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/javascripts/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/javascripts/vendor/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/javascripts/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/javascripts/vendor/bootstrap-select/bootstrap-select.min.css">
     <link rel="stylesheet" href="/stylesheets/layout.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -24,7 +24,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="#">Olso</a>
+            <a class="brand" href="#"></a>
             <div class="nav-collapse collapse navigation_right">
                 <ul class="nav">
                     <li><a href="#">Account Settings</a></li>
@@ -37,17 +37,19 @@
 
 <div class="container">
     <!-- Example row of columns -->
-    <div class="row">
-        <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+    <div class="row clearfix">
+        <div class="navbar_left">
+
+            {% block navbar_left%}{% endblock %}
         </div>
-        <div class="span8">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="main_content">
+
+            <div class="page_headline">{% block page_headline %}{% endblock %} </div>
+            <div class="page_highlight">{% block page_highlight %}{% endblock %} </div>
+            <div class="page_main">{% block page_main %}{% endblock %}  </div>
+
         </div>
+
     </div>
 
 
@@ -60,7 +62,9 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="/javascripts/vendor/jquery/jquery-1.10.2.min.js"></script>
 <script src="/javascripts/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/javascripts/vendor/bootstrap-select/bootstrap-select.min.js"></script>
 {% block scripts %}{% endblock %}
 
 </body>

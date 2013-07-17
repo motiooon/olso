@@ -7,6 +7,7 @@ var express = require('express')
   , http = require('http')
 	, cons = require('consolidate')
 	, swig = require("swig")
+	, log4js = require("log4js")
   , path = require('path');
 
 var app = express();
@@ -31,6 +32,8 @@ swig.init({
 	root: __dirname + '/views'
 });
 
+log4js.replaceConsole();
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -40,5 +43,5 @@ if ('development' == app.get('env')) {
 require('./routes').call(this, app);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on port ' + app.get('port') + " on %s mode", app.get('env') );
 });

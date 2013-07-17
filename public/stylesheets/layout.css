@@ -1,6 +1,10 @@
-body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+.container {
+    padding: 54px 20px 40px 20px;
+    width:1160px;
+}
+
+body{
+    background-color: #efefef;
 }
 
 .navigation_right{
@@ -8,5 +12,87 @@ body {
 }
 
 .navbar-inverse .navbar-inner{
-    background-color: #3c3c3c;
+    background-color: #3c3c3c !important;
+    background-image: none;
+}
+
+.navbar .container{
+    height:54px;
+    padding:0 20px;
+    width:1160px;
+}
+
+.navbar .brand{
+    display: block;
+    float: left;
+    background: url("/images/olso_log.png") 0 0 no-repeat transparent;
+    width:71px;
+    height:29px;
+    text-align: center;
+    margin: 0 0 0 -5px;
+    position: relative;
+    top:11px;
+    left:4px;
+}
+
+.nav-collapse.collapse{
+    margin-top:6px;
+}
+
+.row{
+    margin-left:0;
+}
+
+.navbar .nav > li > a{
+    color:#cecece;
+}
+
+.nav li:last-child a{
+    padding-right: 0;
+}
+
+.navbar .nav{
+    margin-right: 0;
+}
+
+.navbar_left{
+    width:233px;
+    border-right: solid 1px #d1d8e1;
+    height: 100%;
+    float: left;
+}
+
+.main_content{
+    width:925px;
+    float: left;
+}
+
+html, body, .container, .row{
+   height:100%;
+}
+
+
+.page_headline{
+    border-bottom: solid 1px #d1d8e1;
+    margin-left:20px;
+}
+
+.page_highlight{
+    border-bottom: solid 1px #d1d8e1;
+    margin-left:20px;
+    height:260px;
+}
+
+.page_headline h1{
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.navbar_left{
+    padding-top:20px;
+}
+
+.ul_left_nav{
+    list-style: none;
+    margin:0;
 }
