@@ -3,7 +3,7 @@ var App = {};
 App.NavbarLeft = (function(){
 
 	var init = function(){
-
+		$('.selectpicker').selectpicker();
 	};
 
 	return {

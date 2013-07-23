@@ -1,0 +1,23 @@
+.ul_left_nav{
+    list-style: none;
+    margin:0;
+}
+
+.ul_left_nav li{
+
+}
+
+.ul_left_nav li#nav_people a{
+    background: url("/images/people_reports_sprite.png") 2px 0 no-repeat transparent ;
+}
+
+.ul_left_nav li#nav_reports a{
+    background: url("/images/people_reports_sprite.png") 2px -38px no-repeat transparent ;
+}
+
+.ul_left_nav li a{
+ /*color:#363b43;*/
+    margin:6px 0 6px 0;
+    padding-left:30px;
+    display: block;
+}

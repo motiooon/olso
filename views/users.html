@@ -2,9 +2,10 @@
 
 {% block title %}{{title}}{% endblock %}
 
-{% block head %}
-<link rel="stylesheet" href="custom.css">
+{% block css %}
+<link rel="stylesheet" href="/stylesheets/app/navbar_left.css">
 {% endblock %}
+
 
 {% block navbar_left%}
         {% include "partials/navbar_left.html" %}
@@ -22,5 +23,10 @@
 
 {% block page_main %}
 
+{% endblock %}
+
+
+{% block scripts %}
+<script src="/javascripts/app/navbar_left.js"></script>
 {% endblock %}
 
