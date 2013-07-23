@@ -3,6 +3,7 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block css %}
+<link rel="stylesheet" href="/stylesheets/app/users.css">
 <link rel="stylesheet" href="/stylesheets/app/navbar_left.css">
 {% endblock %}
 
@@ -19,6 +20,24 @@
 
 {% block page_highlight %}
 
+        <div class="left_highlight">
+               <div class="range_calendar">
+                   <div class="range_left"><a href="#" id="dp4" data-date-format="yyyy-mm-dd" data-date="2013-02-20">Change</a></div>
+                   <div class="range_middle"> &mdash; </div>
+                   <div class="range_right"><a href="#" id="dp5" data-date-format="yyyy-mm-dd" data-date="2013-02-20">Change</a></div>
+               </div>
+                <ul class="highlight_numbers hide">
+                    <li>Total Users <span>0</span></li>
+                    <li>Gross Revenue <span>0</span></li>
+                    <li>Purchases <span>0</span></li>
+                    <li>Total Revenue Users <span>0</span></li>
+                </ul>
+        </div>
+
+        <div class="right_highlight">
+               <img src="/images/revenue_placeholder.png" alt="graphic" />
+        </div>
+
 {% endblock %}
 
 {% block page_main %}
@@ -27,6 +46,7 @@
 
 
 {% block scripts %}
+<script src="/javascripts/app/users.js"></script>
 <script src="/javascripts/app/navbar_left.js"></script>
 {% endblock %}
 

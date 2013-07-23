@@ -1,4 +1,4 @@
-var App = {};
+require(['/javascripts/app/app.js'], function(App) {
 
 App.NavbarLeft = (function(){
 
@@ -15,4 +15,6 @@ App.NavbarLeft = (function(){
 
 $(function(){
 	App.NavbarLeft.init();
+});
+
 });

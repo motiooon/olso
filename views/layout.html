@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link rel="stylesheet" href="/javascripts/bower_components/bootstrap/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/javascripts/bower_components/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="/javascripts/bower_components/bootstrap-datepicker/css/datepicker.css">
     <link rel="stylesheet" href="/stylesheets/layout.css">
     {% block css %}{% endblock %}
 
@@ -65,15 +66,20 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 {% if env_name == 'development' %}
+<script src="/javascripts/bower_components/requirejs/require.js"></script>
 <script src="/javascripts/bower_components/jquery/jquery.js"></script>
 <script src="/javascripts/bower_components/bootstrap/bootstrap/js/bootstrap.js"></script>
 <script src="/javascripts/bower_components/bootstrap-select/bootstrap-select.js"></script>
+<script src="/javascripts/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
 
 <!-- Env: {{env_name}} -->
 {% else %}
+<script src="/javascripts/bower_components/requirejs/require.js"></script>
 <script src="/javascripts/bower_components/jquery/jquery.js"></script>
 <script src="/javascripts/bower_components/bootstrap/bootstrap/js/bootstrap.js"></script>
 <script src="/javascripts/bower_components/bootstrap-select/bootstrap-select.js"></script>
+<script src="/javascripts/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 <!-- Env: {{env_name}} -->
 {% endif %}
 

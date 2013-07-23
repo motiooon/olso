@@ -16,5 +16,5 @@
     "commit": "74a66551ff12f969df98fde3ca7ddc6515ee1c76"
   },
   "_source": "git://github.com/twitter/bootstrap.git",
-  "_target": "~2.3.2"
+  "_target": ">=2.0.4 <3.0"
 }
