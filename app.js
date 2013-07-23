@@ -8,9 +8,11 @@ var express = require('express')
 	, cons = require('consolidate')
 	, swig = require("swig")
 	, log4js = require("log4js")
+	, middleware = require("./middleware")
   , path = require('path');
 
 var app = express();
+global.env = require('./config/env');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -19,6 +21,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 app.use(express.favicon());
 app.use(express.logger('dev'));
+app.use(middleware.locals());
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
