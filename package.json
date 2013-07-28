@@ -12,6 +12,7 @@
     "consolidate": "~0.9.1",
     "log4js": "~0.6.6",
     "envious": "~0.2.0",
-    "jshint": "~2.1.4"
+    "jshint": "~2.1.4",
+    "mongoose": "~3.6.15"
   }
 }

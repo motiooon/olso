@@ -1,5 +1,11 @@
 module.exports = {
 	name : "production",
-	"mongodb_hostname": "mongodb://localhost/customer_analitycs_production",
-	"redis_hostname": "127.0.0.1"
+	"mongodb":{
+		"host" : "mongodb://localhost/customer_analytics_prod",
+     port: "333"
+	},
+	"redis":{
+		host: "127.0.0.1",
+		port: "3242"
+	}
 };

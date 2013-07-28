@@ -27,6 +27,14 @@
     line-height: 29px;
     height: 29px;
     color: #b6c0cd;
-    position: relative;
-    top: -10px;
+}
+
+.range_left a, .range_right a{
+    color:#444;
+    font-size: 13px;
+    width: 88px;
+    height: 29px;
+    line-height: 29px;
+    display: block;
+    padding:0 10px;
 }

@@ -9,6 +9,7 @@ var express = require('express')
 	, swig = require("swig")
 	, log4js = require("log4js")
 	, middleware = require("./middleware")
+	, boot = require("./boot")
   , path = require('path');
 
 var app = express();
@@ -41,6 +42,9 @@ log4js.replaceConsole();
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+var booter = boot.call(this, app);
+console.log("booter:", booter);
 
 // Load Routes
 require('./routes').call(this, app);
