@@ -2,11 +2,27 @@ require(['/javascripts/app/app.js'], function(App) {
 
 	App.UsersPage = (function(){
 
+		var start, end;
+
 		var init = function(){
-			initializa_datepicker();
+			initialize_datepicker();
 		};
 
-		var initializa_datepicker = function(){
+
+		var getDataForSelected = function(start, end){
+
+			var req = $.ajax({
+				url: "/users",
+				data: {start: start, end: end }
+			});
+
+			req.done(function(data) { console.log(data) })
+			req.fail(function() { console.log("error with gettting data"); })
+
+		};
+
+
+		var initialize_datepicker = function(){
 			$('#dp4').datepicker()
 				.on('changeDate', function(e){
 					var y = e.date.getFullYear(),
